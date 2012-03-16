@@ -46,6 +46,8 @@ computationStatement =
 			shellStatement,
 			packStatement,
 			userModuleDeclaration,
+			includeStatement,
+			useStatement,
 			unimplemented "mirror",
 			unimplemented "multmatrix",
 			unimplemented "color",
@@ -63,8 +65,6 @@ computationStatement =
 		s <- tryMany [
 			echoStatement,
 			assigmentStatement,
-			includeStatement,
-			useStatement,
 			sphere,
 			cube,
 			square,
